@@ -1,0 +1,497 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background: #160727;
+  color: #fff;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 400;
+  min-width: 37.5rem;
+}
+main {
+  min-width: 37.5rem;
+}
+
+header {
+  text-align: center;
+}
+
+header img {
+  width: 14.6rem;
+  height: 5.9rem;
+  margin-top: 6.7rem;
+}
+
+.container {
+  text-align: center;
+}
+.container__titulo {
+  font-size: 1.5rem;
+  height: 1.9rem;
+  margin: 2.5rem auto 1.9rem;
+  text-align: center;
+}
+
+.container__video {
+  text-align: center;
+}
+
+.container__video-layer {
+  width: 37rem;
+  height: 23rem;
+  background: linear-gradient(#160727, #160727) padding-box,
+    linear-gradient(140deg, #03da7d, #8e7de4 85% 100%) border-box;
+  border-radius: 1.5rem;
+  border: 4px solid transparent;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #040840;
+  padding: 0.5em 1.5em;
+  cursor: pointer;
+  margin: 3.4rem auto 1.9rem;
+}
+
+.container button {
+  padding: 0.5rem 2rem;
+}
+button a {
+  text-decoration: none;
+  color: #160727;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+button {
+  background: #03da7d;
+  border-radius: 2rem;
+  border: none;
+  margin: 0 auto 2rem;
+}
+
+.container__texto-buy {
+  margin-bottom: 13rem;
+  font-weight: 400;
+}
+
+.alunos {
+  text-align: center;
+  margin-bottom: 3.7rem;
+}
+
+.alunos__number {
+  font-size: 15rem;
+}
+
+.alunos__texto {
+  font-size: 2.7rem;
+  width: 28rem;
+  height: 6.3rem;
+  margin: 0 auto;
+  line-height: normal;
+  font-weight: 400;
+}
+
+.alunos__texto span {
+  font-size: 2.7rem;
+  color: #8e7de4;
+  font-weight: 400px;
+}
+
+.feedback {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.feedback__number {
+  font-size: 2rem;
+  width: 25rem;
+  margin: 0 auto 3.7rem;
+  font-weight: 400;
+}
+
+.feedback__number span {
+  font-size: 2rem;
+  color: #03da7d;
+  font-weight: 400;
+}
+
+.feedback-1 {
+  margin-bottom: 2rem;
+}
+
+.feedback button {
+  padding: 0.6rem 2rem;
+}
+
+.feedback-1 {
+  width: 90%;
+}
+
+.lettering {
+  margin-bottom: 3.3rem;
+  width: 100vw;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.lettering__cerebro {
+  display: inline-block;
+  gap: 0.5rem;
+  align-items: center;
+  width: 100%;
+  animation: 5s slide infinite linear;
+}
+
+.lettering__cerebro p {
+  display: inline-block;
+  color: #03da7d;
+}
+
+.lettering__cerebro img {
+  display: inline-block;
+  height: 2rem;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.lettering__lampada {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 0.5rem;
+  animation: 4.5s slidel infinite linear;
+}
+
+.lettering__lampada p {
+  color: #8e7de4;
+}
+
+.lettering__lampada img {
+  height: 2rem;
+}
+
+@keyframes slidel {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.lettering__balao {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 6rem;
+  white-space: nowrap;
+  animation: move-rtl 3s slide linear infinite;
+}
+
+.about {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 10rem;
+}
+
+.about img {
+  width: 30rem;
+  height: 40rem;
+}
+
+.about__titulo {
+  font-size: 2.5rem;
+  width: 16.9rem;
+  height: 6.7rem;
+  font-family: "Fredoka";
+  font-weight: 400;
+  margin: 0 auto;
+}
+
+.modulos {
+  background: #f5f5f5;
+  width: 85%;
+  max-width: 44rem;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 1.8rem;
+  background-image: url(/Stile/img/barra\ modulos.svg);
+  background-repeat: no-repeat;
+  background-position: center top 12rem;
+  height: 80rem;
+  background-size: 8rem;
+}
+
+.modulos img {
+  margin-top: 1.4rem;
+}
+
+.modulos__informacoes {
+  margin: 2rem 0;
+}
+
+.modulos__img-sub {
+  position: relative;
+  top: 44rem;
+}
+
+.modulos__subtitulo h2 {
+  font-size: 2rem;
+}
+
+.modulos__subtitulo {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: #03da7d;
+  margin: 0.4rem auto 1rem;
+  position: relative;
+  top: 45rem;
+}
+
+.modulos__texto {
+  font-weight: 400;
+  color: #000;
+  margin: 0.4rem auto 1rem;
+  position: relative;
+  top: 45rem;
+}
+
+.planos__titulo {
+  font-size: 2.5rem;
+  width: 25.1rem;
+  height: 6.3rem;
+}
+
+.botao__modulos {
+  text-align: center;
+  margin: 1.7rem auto 0.5rem;
+}
+
+.modulos__botao {
+  background: #03da7d;
+  padding: 0.7rem 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.modulos__botao a {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.metodo {
+  text-align: center;
+  margin: 3rem auto 0;
+}
+
+.metodo img {
+  width: 90%;
+}
+
+.videos {
+  text-align: center;
+}
+
+.videos__titulos {
+  color: #03da7d;
+  text-align: center;
+  font-family: "Fredoka";
+  font-size: 1rempx;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 26.7rem;
+  margin: 0 auto 3rem;
+}
+
+.videos__botoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 4.5rem;
+  justify-items: center;
+}
+
+.videos__botoes button {
+  border-radius: 15px;
+  background: #545454;
+  width: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 1rem 0;
+}
+
+.videos__botoes a {
+  color: #03da7d;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Fredoka;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0.4rem;
+}
+
+.layer-videos {
+  width: 37rem;
+  height: 23rem;
+  background: linear-gradient(#160727, #160727) padding-box,
+    linear-gradient(140deg, #03da7d, #8e7de4 85% 100%) border-box;
+  border-radius: 1.5rem;
+  border: 4px solid transparent;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #040840;
+  padding: 0.5em 1.5em;
+  cursor: pointer;
+  margin: 3.4rem auto 1.9rem;
+}
+
+.planos {
+  text-align: center;
+}
+
+.planos__titulo {
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Fredoka;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 25.1rem;
+  height: 6.3rem;
+}
+
+.planos__titulo span {
+  color: #03da7d;
+  font-family: "Fredoka";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.planos__1 {
+  margin: 3rem 0;
+}
+
+.garantia {
+  text-align: center;
+  background: #f5f5f5;
+  color: #000;
+  width: 25rem;
+  height: auto;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  margin: 6rem auto;
+}
+
+.garantia p {
+  font-size: 1.5rem;
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.faq__titulo {
+  color: #f5f5f5;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Fredoka;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.pg1__info {
+  position: relative;
+  width: 90%;
+  background: #f5f5f5;
+  border-radius: 1.5rem;
+  background: linear-gradient(transparent, transparent) padding-box,
+    linear-gradient(165deg, #21df8d, #fff 95% 100%) border-box;
+  border-radius: 1.5rem;
+  border: 3px solid transparent;
+  position: relative;
+  margin: 0 auto;
+}
+
+.pg1__info #input {
+  position: absolute;
+  opacity: 0;
+}
+
+.faq__pg1:has(input:checked) > .faq__resposta {
+  max-height: 100%;
+}
+
+.pg1__info label {
+  color: #000;
+  height: 23rem;
+  border-radius: 1.5rem;
+  background: #f5f5f5;
+  padding: 0 4rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+.seta {
+  position: absolute;
+  top: 1.3rem;
+  left: 2%;
+  color: #fff;
+  padding: 0.3rem 0.3rem 0 0.3rem;
+  background: #8e7de4;
+  border-radius: 12rem;
+}
+
+.faq__resposta {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.pg1__info div p {
+  color: #000;
+  background: #f5f5f5;
+}
