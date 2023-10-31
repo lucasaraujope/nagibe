@@ -15,10 +15,10 @@
 body {
   background: #160727;
   color: #fff;
-  font-family: "Fredoka", sans-serif;
   font-weight: 400;
   min-width: 37.5rem;
 }
+
 main {
   min-width: 37.5rem;
 }
@@ -27,20 +27,37 @@ header {
   text-align: center;
 }
 
+header button {
+  display: none;
+}
+
 header img {
-  width: 14.6rem;
-  height: 5.9rem;
-  margin-top: 6.7rem;
+  width: 20rem;
+  height: 10rem;
+  margin-top: 3rem;
 }
 
 .container {
   text-align: center;
+  color: #fff;
 }
+
 .container__titulo {
-  font-size: 1.5rem;
-  height: 1.9rem;
-  margin: 2.5rem auto 1.9rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  width: 30rem;
+  margin: 0 auto;
+}
+
+.container__texto {
   text-align: center;
+  font-family: Fredoka;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 2rem auto 0;
+  width: 34rem;
 }
 
 .container__video {
@@ -48,8 +65,8 @@ header img {
 }
 
 .container__video-layer {
-  width: 37rem;
-  height: 23rem;
+  width: 33rem;
+  height: 21rem;
   background: linear-gradient(#160727, #160727) padding-box,
     linear-gradient(140deg, #03da7d, #8e7de4 85% 100%) border-box;
   border-radius: 1.5rem;
@@ -85,8 +102,17 @@ button {
 }
 
 .container__texto-buy {
-  margin-bottom: 13rem;
+  margin: 2rem auto;
   font-weight: 400;
+  color: #fff;
+
+  text-align: center;
+  font-family: Fredoka;
+  font-size: 1.65rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 30rem;
 }
 
 .alunos {
@@ -116,6 +142,11 @@ button {
 .feedback {
   text-align: center;
   margin: 0 auto;
+  display: block;
+}
+
+.depoimentos-web {
+  display: none;
 }
 
 .feedback__number {
@@ -143,19 +174,16 @@ button {
   width: 90%;
 }
 
-.lettering {
-  margin-bottom: 3.3rem;
-  width: 100vw;
-  overflow: hidden;
-  white-space: nowrap;
+.swiper {
+  display: block;
 }
 
-.lettering__cerebro {
-  display: inline-block;
-  gap: 0.5rem;
-  align-items: center;
+.lettering {
+  margin-bottom: 3.3rem;
   width: 100%;
-  animation: 5s slide infinite linear;
+  overflow: hidden;
+  white-space: nowrap;
+  display: none;
 }
 
 .lettering__cerebro p {
@@ -164,8 +192,7 @@ button {
 }
 
 .lettering__cerebro img {
-  display: inline-block;
-  height: 2rem;
+  height: 1.5rem;
 }
 
 @keyframes slide {
@@ -177,23 +204,23 @@ button {
   }
 }
 
-.lettering__lampada {
-  display: flex;
+.lettering__cerebro {
+  display: inline-block;
+  gap: 0.8rem;
   align-items: center;
-  width: 100%;
-  gap: 0.5rem;
-  animation: 4.5s slidel infinite linear;
+  animation: 30s slide infinite linear;
 }
 
 .lettering__lampada p {
   color: #8e7de4;
+  display: inline-block;
 }
 
 .lettering__lampada img {
   height: 2rem;
 }
 
-@keyframes slidel {
+@keyframes slidex {
   from {
     transform: translateX(-100%);
   }
@@ -202,13 +229,28 @@ button {
   }
 }
 
+.lettering__lampada {
+  display: inline-block;
+  align-items: center;
+  gap: 0.5rem;
+  animation: 5s slidex infinite linear;
+}
+
+@keyframes slidey {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 .lettering__balao {
   display: flex;
-  align-items: center;
-  width: 100%;
+
   padding: 0 6rem;
   white-space: nowrap;
-  animation: move-rtl 3s slide linear infinite;
+  animation: 3s slidey linear infinite;
 }
 
 .about {
@@ -225,6 +267,10 @@ button {
   height: 40rem;
 }
 
+.about__titulo-web {
+  display: none;
+}
+
 .about__titulo {
   font-size: 2.5rem;
   width: 16.9rem;
@@ -232,60 +278,32 @@ button {
   font-family: "Fredoka";
   font-weight: 400;
   margin: 0 auto;
+  display: block;
+}
+
+.about__texto1 {
+  width: 35rem;
+  margin: 1rem auto 0;
+  font-size: 1.8rem;
+}
+
+.about__texto {
+  width: 33rem;
+  margin: 1rem auto 0;
+  font-size: 1.8rem;
 }
 
 .modulos {
-  background: #f5f5f5;
-  width: 85%;
-  max-width: 44rem;
-  margin: 0 auto;
   text-align: center;
-  border-radius: 1.8rem;
-  background-image: url(/Stile/img/barra\ modulos.svg);
-  background-repeat: no-repeat;
-  background-position: center top 12rem;
-  height: 80rem;
-  background-size: 8rem;
+}
+
+.imagem__2 {
+  display: none;
 }
 
 .modulos img {
   margin-top: 1.4rem;
-}
-
-.modulos__informacoes {
-  margin: 2rem 0;
-}
-
-.modulos__img-sub {
-  position: relative;
-  top: 44rem;
-}
-
-.modulos__subtitulo h2 {
-  font-size: 2rem;
-}
-
-.modulos__subtitulo {
-  font-size: 1.7rem;
-  font-weight: 400;
-  color: #03da7d;
-  margin: 0.4rem auto 1rem;
-  position: relative;
-  top: 45rem;
-}
-
-.modulos__texto {
-  font-weight: 400;
-  color: #000;
-  margin: 0.4rem auto 1rem;
-  position: relative;
-  top: 45rem;
-}
-
-.planos__titulo {
-  font-size: 2.5rem;
-  width: 25.1rem;
-  height: 6.3rem;
+  min-width: 80%;
 }
 
 .botao__modulos {
@@ -311,7 +329,20 @@ button {
 }
 
 .metodo img {
-  width: 90%;
+  width: 100;
+}
+
+.conteudo {
+  text-align: center;
+  margin: 0 auto 1.5rem;
+}
+
+.conteudo button {
+  padding: 0.3rem 1rem;
+}
+
+.titulo__conteudo{
+  display: block;
 }
 
 .videos {
@@ -333,14 +364,14 @@ button {
 .videos__botoes {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 0 4.5rem;
+  margin: 0 2rem;
   justify-items: center;
 }
 
 .videos__botoes button {
   border-radius: 15px;
   background: #545454;
-  width: 9rem;
+  width: 10rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -360,8 +391,8 @@ button {
 }
 
 .layer-videos {
-  width: 37rem;
-  height: 23rem;
+  width: 33rem;
+  height: 21rem;
   background: linear-gradient(#160727, #160727) padding-box,
     linear-gradient(140deg, #03da7d, #8e7de4 85% 100%) border-box;
   border-radius: 1.5rem;
@@ -443,6 +474,10 @@ button {
   line-height: normal;
 }
 
+.faq__pg1 {
+  justify-content: center;
+}
+
 .pg1__info {
   position: relative;
   width: 90%;
@@ -461,19 +496,15 @@ button {
   opacity: 0;
 }
 
-.faq__pg1:has(input:checked) > .faq__resposta {
-  max-height: 100%;
-}
-
 .pg1__info label {
+  display: flex;
+  align-items: center;
   color: #000;
   height: 23rem;
   border-radius: 1.5rem;
   background: #f5f5f5;
   padding: 0 4rem;
   height: 5rem;
-  display: flex;
-  align-items: center;
 }
 
 .seta {
@@ -485,13 +516,356 @@ button {
   background: #8e7de4;
   border-radius: 12rem;
 }
-
 .faq__resposta {
   max-height: 0;
   overflow: hidden;
 }
 
+.faq__resposta > p:checked {
+  max-height: 100%;
+}
+
+.pg1__info:nth-child(4):checked {
+  max-height: 100%;
+}
+
 .pg1__info div p {
   color: #000;
   background: #f5f5f5;
+}
+
+.texto-e-imagem {
+  display: flex;
+  width: 30rem;
+  margin: 0 auto;
+}
+
+.texto-e-imagem p {
+  width: 15rem;
+}
+
+.texto-e-imagem img {
+  width: 15rem;
+}
+
+.Footer__logo {
+  display: flex;
+  margin: 3rem auto 0;
+  width: 20rem;
+}
+
+.redes__sociais {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+ul li {
+  list-style: none;
+  height: 10rem;
+}
+
+@media screen and (min-width: 1400px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    height: 12rem;
+    margin: 1rem 3rem 0;
+    align-items: center;
+  }
+
+  header img {
+    margin: 0;
+  }
+
+  header button {
+    display: block;
+    margin: 0 4rem 0 0;
+    padding: 0.5rem 2rem;
+  }
+
+  .container__titulo {
+    display: block;
+    font-size: 4rem;
+    margin: 0 auto;
+    width: 65rem;
+  }
+
+  .container__texto {
+    font-size: 3rem;
+    width: 65rem;
+  }
+
+  .container__video-layer {
+    width: 127.4rem;
+    height: 62.8rem;
+  }
+
+  .container button {
+    padding: 0.5rem 4rem;
+  }
+
+  .container button a {
+    font-size: 3rem;
+  }
+
+  .container__texto-buy {
+    font-size: 4rem;
+    width: 100rem;
+  }
+
+  .alunos {
+    display: flex;
+    margin: 7rem auto;
+    justify-content: space-between;
+    width: 115.7rem;
+    height: 28.5rem;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .alunos__number {
+    font-size: 30rem;
+  }
+
+  .alunos__texto {
+    margin: 0;
+    font-size: 5.4rem;
+    width: 57.1rem;
+    height: 22.8rem;
+  }
+
+  .alunos__texto span {
+    font-size: 5.4rem;
+  }
+
+  .feedback {
+    display: none;
+  }
+
+  .depoimentos-web {
+    display: block;
+    text-align: center;
+  }
+
+  .depoimentos-web h2 {
+    font-size: 3.5rem;
+    width: 82rem;
+    margin: 3rem auto;
+  }
+  .depoimentos-web h2 span {
+    font-size: 3.5rem;
+
+    color: #03da7d;
+    font-weight: 400;
+  }
+
+  .depoimentos__imagens {
+    display: flex;
+    margin: 0 5rem;
+    text-align: center;
+    gap: 2rem;
+  }
+  .depoimentos__um {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+
+  .depoimentos__um img {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .depoimentos__dois {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+
+  .depoimentos__dois img {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .depoimentos-web button {
+    padding: 0.5rem 5rem;
+  }
+
+  .depoimentos-web a {
+    font-size: 3rem;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem 3rem 10rem;
+  }
+
+  .about img {
+    width: 65rem;
+    height: 63rem;
+  }
+
+  .about__titulo {
+    display: none;
+  }
+
+  .about__infos p {
+    font-size: 3rem;
+    width: 70rem;
+  }
+
+  .about__titulo-web {
+    display: block;
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 5rem;
+    font-weight: 400;
+  }
+  .modulos {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .imagem__1 {
+    display: none;
+  }
+
+  .imagem__2 {
+    width: 100%;
+    display: inline-block;
+  }
+
+  .metodo button{
+    display: none;
+  }
+
+  .metodo img {
+    width: 70%;
+    margin: 5rem 0 -10rem 0;
+  }
+
+  .titulo__conteudo{
+    display: none;
+  }
+
+  .conteudo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -3rem 12rem;
+  }
+
+  .conteudo img{
+    width: 65rem;
+  }
+  
+
+  .titulo__conteudo-2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .conteudo button{
+    font-size: 3rem;
+    padding: 1rem 4rem;
+  }
+
+  .videos__botoes{
+    margin: 0 14rem;
+    row-gap: 1rem;
+  }
+
+  .videos__titulos{
+    font-size: 3rem;
+    margin-top: 5rem;
+    width: 50rem;
+  }
+
+  .videos__botoes button{
+    width: 30rem;
+    height: 6.5rem;
+    border-radius: 3rem;
+  }
+  
+  .videos__botoes button a{
+    font-size: 2.5rem;
+  }
+
+  .layer-videos{
+    width: 127.4rem;
+    height: 62.8rem;
+  }
+
+  .planos__titulo{
+    width: 70rem;
+    font-size: 4rem;
+    margin: 8rem auto;
+  }
+  .planos__titulo span{
+    font-size: 4rem;
+  }
+
+  .planos img{
+    margin: 0;
+    width: 53.7rem;
+    height: 92.4rem;
+  }
+
+  .garantia{
+    width: 61.2rem;
+    height: 76.8rem;
+  }
+
+  .garantia img{
+    width: 58.4rem;
+    height: 46.4rem;
+  }
+
+  .garantia p{
+    font-size: 3.5rem;
+  }
+
+  .faq__titulo{
+    font-size: 5.5rem;
+    margin-bottom: 4rem;
+  }
+
+  .faq__pg1{
+    width: 80%;
+    margin: 0 auto;
+
+  }
+
+  .pg1__info {
+    position: relative;
+    width: 90%;
+    background: #f5f5f5;
+    border-radius: 1.5rem;
+    background: linear-gradient(transparent, transparent) padding-box,
+      linear-gradient(165deg, #21df8d, #fff 95% 100%) border-box;
+    border-radius: 1.5rem;
+    border: 5px solid transparent;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .seta {
+    position: absolute;
+    top: 1.3rem;
+    left: 2%;
+    color: #fff;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    background: #8e7de4;
+    border-radius: 12rem;
+  }
+
+  .pg1__info label{
+    padding-left: 7rem;
+    font-size: 2.5rem;
+  }
+
+ 
 }

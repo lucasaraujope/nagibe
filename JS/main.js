@@ -1,5 +1,5 @@
 let valueDisplays = document.querySelectorAll(".alunos__number");
-let interval = 5000;
+let interval = 20000;
 
 valueDisplays.forEach((valueDisplay) => {
     let startValue = 0;
