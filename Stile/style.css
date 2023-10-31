@@ -341,10 +341,13 @@ button {
   padding: 0.3rem 1rem;
 }
 
-.titulo__conteudo{
+.titulo__conteudo {
   display: block;
 }
 
+.titulo__conteudo-2 {
+  display: none;
+}
 .videos {
   text-align: center;
 }
@@ -738,7 +741,7 @@ ul li {
     display: inline-block;
   }
 
-  .metodo button{
+  .metodo button {
     display: none;
   }
 
@@ -747,96 +750,95 @@ ul li {
     margin: 5rem 0 -10rem 0;
   }
 
-  .titulo__conteudo{
+  .titulo__conteudo {
     display: none;
   }
 
-  .conteudo{
+  .conteudo {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: -3rem 12rem;
   }
 
-  .conteudo img{
+  .conteudo img {
     width: 65rem;
   }
-  
 
-  .titulo__conteudo-2{
+  .titulo__conteudo-2 {
     font-size: 3rem;
     margin-bottom: 2rem;
+    display: block;
   }
 
-  .conteudo button{
+  .conteudo button {
     font-size: 3rem;
     padding: 1rem 4rem;
   }
 
-  .videos__botoes{
+  .videos__botoes {
     margin: 0 14rem;
     row-gap: 1rem;
   }
 
-  .videos__titulos{
+  .videos__titulos {
     font-size: 3rem;
     margin-top: 5rem;
     width: 50rem;
   }
 
-  .videos__botoes button{
+  .videos__botoes button {
     width: 30rem;
     height: 6.5rem;
     border-radius: 3rem;
   }
-  
-  .videos__botoes button a{
+
+  .videos__botoes button a {
     font-size: 2.5rem;
   }
 
-  .layer-videos{
+  .layer-videos {
     width: 127.4rem;
     height: 62.8rem;
   }
 
-  .planos__titulo{
+  .planos__titulo {
     width: 70rem;
     font-size: 4rem;
     margin: 8rem auto;
   }
-  .planos__titulo span{
+  .planos__titulo span {
     font-size: 4rem;
   }
 
-  .planos img{
+  .planos img {
     margin: 0;
     width: 53.7rem;
     height: 92.4rem;
   }
 
-  .garantia{
+  .garantia {
     width: 61.2rem;
     height: 76.8rem;
   }
 
-  .garantia img{
+  .garantia img {
     width: 58.4rem;
     height: 46.4rem;
   }
 
-  .garantia p{
+  .garantia p {
     font-size: 3.5rem;
   }
 
-  .faq__titulo{
+  .faq__titulo {
     font-size: 5.5rem;
     margin-bottom: 4rem;
   }
 
-  .faq__pg1{
+  .faq__pg1 {
     width: 80%;
     margin: 0 auto;
-
   }
 
   .pg1__info {
@@ -862,10 +864,8 @@ ul li {
     border-radius: 12rem;
   }
 
-  .pg1__info label{
+  .pg1__info label {
     padding-left: 7rem;
     font-size: 2.5rem;
   }
-
- 
 }
