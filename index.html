@@ -345,10 +345,9 @@
           Selecione um dos temas abaixo e conheça algumas de nossas aulas:
         </h2>
         <div class="videos__botoes">
-          <button onclick="trocar()">
-            <a href="https://www.youtube.com/watch?v=yU0mpEpBaGM"
-              >Produtividade</a
-            >
+          <button onclick="changeVideo('https://www.youtube.com/embed/_NjbWF7VYQ8')">Video 1</button>
+          <button onclick="changeVideo('https://www.youtube.com/embed/IMABFAYaJ6o')">Video 2</button>
+      
           </button>
           <button onclick="trocar()">
             <a href="https://www.youtube.com/watch?v=hT_HbysFSEg">PNL</a>
@@ -500,27 +499,7 @@
         </div>
       </section>
 
-      <script src="/JS/main.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-      <script>
-        const swiper = new Swiper(".swiper", {
-          speed: 400,
-          spaceBetween: 0,
-          pagination: {
-            el: ".swiper-pagination",
-            type: "bullets",
-          },
-        });
-      </script>
-      <script
-        type="module"
-        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-      ></script>
-      <script
-        nomodule
-        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-      ></script>
-    </main>
+      
 
     <footer>
       <div class="texto-e-imagem">
@@ -542,4 +521,32 @@
       </div>
     </footer>
   </body>
+  <script>
+    function changeVideo(embedUrl) {
+        document.getElementById("video").src = embedUrl;
+    }
+  </script>
+  <script src="/JS/main.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script>
+        const swiper = new Swiper(".swiper", {
+          speed: 400,
+          spaceBetween: 0,
+          pagination: {
+            el: ".swiper-pagination",
+            type: "bullets",
+          },
+        });
+      </script>
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      ></script>
+      
+    
+    </main>
 </html>
