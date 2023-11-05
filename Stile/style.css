@@ -61,6 +61,10 @@ header img {
   width: 34rem;
 }
 
+.container__video-web {
+  display: none;
+}
+
 .container__video {
   text-align: center;
 }
@@ -80,9 +84,12 @@ header img {
   font-weight: bold;
   text-decoration: none;
   color: #040840;
-  padding: 0.5em 1.5em;
   cursor: pointer;
   margin: 3.4rem auto 1.9rem;
+}
+
+#video__um {
+  left: 80rem;
 }
 
 .container button {
@@ -118,7 +125,11 @@ button {
 
 .alunos {
   text-align: center;
-  margin-bottom: 3.7rem;
+  margin: 6rem auto 3.7rem;
+}
+.alunos p {
+  font-size: 2rem;
+  margin-bottom: -1.2rem;
 }
 
 .alunos__number {
@@ -373,21 +384,18 @@ button {
 }
 
 .videos__botoes button {
-  border-radius: 15px;
+  border-radius: 1.5rem;
   background: #545454;
   width: 10rem;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 0 1rem 0;
-}
-
-.videos__botoes a {
   color: #03da7d;
   text-align: center;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: Fredoka;
-  font-size: 10px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -409,7 +417,6 @@ button {
   font-weight: bold;
   text-decoration: none;
   color: #040840;
-  padding: 0.5em 1.5em;
   cursor: pointer;
   margin: 3.4rem auto 1.9rem;
 }
@@ -443,6 +450,28 @@ button {
 
 .planos__1 {
   margin: 3rem 0;
+}
+
+.plano1 button {
+  background: linear-gradient(
+    0.25turn,
+    rgba(56, 163, 165, 1) 0.5%,
+    rgba(11, 213, 131, 0.7) 50%
+  );
+  padding: 0.5rem 2em;
+}
+
+.plano2 button {
+  background: linear-gradient(
+    0.25turn,
+    rgba(66, 33, 90, 1) 0.5%,
+    rgba(142, 125, 228, 0.7) 50%
+  );
+  padding: 0.5rem 2em;
+}
+
+.plano2 button a {
+  color: #f5f5f5;
 }
 
 .garantia {
@@ -570,23 +599,33 @@ ul li {
   height: 10rem;
 }
 
+.layer-videos-web {
+  display: none;
+}
+
 @media screen and (min-width: 1400px) {
   header {
     display: flex;
     justify-content: space-between;
     height: 12rem;
-    margin: 1rem 3rem 0;
+    margin: 2rem 3rem 0;
     align-items: center;
   }
 
   header img {
     margin: 0;
+    width: 24rem;
+    height: 20rem;
   }
 
   header button {
     display: block;
     margin: 0 4rem 0 0;
     padding: 0.5rem 2rem;
+  }
+
+  header button a{
+    font-size: 2.3rem;
   }
 
   .container__titulo {
@@ -611,8 +650,17 @@ ul li {
     padding: 0.5rem 4rem;
   }
 
+  .container button:hover {
+    background: #8e7de4;
+    transition: 0.5s;
+  }
+
   .container button a {
     font-size: 3rem;
+  }
+  .container button a:hover {
+    color: #160727;
+    transition: 0.5s;
   }
 
   .container__texto-buy {
@@ -621,23 +669,32 @@ ul li {
   }
 
   .alunos {
+    margin-top: 10rem;
+  }
+
+  .alunos__letra-titulo {
     display: flex;
     margin: 7rem auto;
     justify-content: space-between;
     width: 115.7rem;
     height: 28.5rem;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
+  }
+
+  .alunos p {
+    font-size: 6rem;
+    margin-bottom: -5rem;
   }
 
   .alunos__number {
-    font-size: 30rem;
+    font-size: 25rem;
   }
 
   .alunos__texto {
     margin: 0;
     font-size: 5.4rem;
-    width: 57.1rem;
+    width: 50rem;
     height: 22.8rem;
   }
 
@@ -669,7 +726,7 @@ ul li {
   .depoimentos__imagens {
     display: flex;
     margin: 0 9.5rem;
-    text-align:  center;
+    text-align: center;
     gap: 2rem;
   }
   .depoimentos__um {
@@ -696,8 +753,18 @@ ul li {
     padding: 0.5rem 5rem;
   }
 
+  .depoimentos-web button:hover {
+    background: #8e7de4;
+    transition: 0.5s;
+  }
+
   .depoimentos-web a {
     font-size: 3rem;
+  }
+
+  .depoimentos-web a:hover {
+    color: #160727;
+    transition: 0.5s;
   }
 
   .about {
@@ -748,6 +815,16 @@ ul li {
     display: none;
   }
 
+  .metodo button:hover {
+    background: #8e7de4;
+    transition: 0.5s;
+  }
+
+  .metodo button a:hover {
+    color: #160727;
+    transition: 0.5s;
+  }
+
   .metodo img {
     width: 70%;
     margin: 5rem 0 -10rem 0;
@@ -761,7 +838,7 @@ ul li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: -3rem 12rem;
+    margin: -8rem 12rem;
   }
 
   .conteudo img {
@@ -777,6 +854,17 @@ ul li {
   .conteudo button {
     font-size: 3rem;
     padding: 1rem 4rem;
+    cursor: pointer;
+  }
+
+  .conteudo button:hover {
+    background: #8e7de4;
+    transition: 0.5s;
+  }
+
+  .conteudo button a:hover {
+    color: #160727;
+    transition: 0.5s;
   }
 
   .videos__botoes {
@@ -794,15 +882,33 @@ ul li {
     width: 30rem;
     height: 6.5rem;
     border-radius: 3rem;
-  }
-
-  .videos__botoes button a {
     font-size: 2.5rem;
   }
 
-  .layer-videos {
+  .videos__botoes button:hover {
+    background: #03da7d;
+    color: #545454;
+    cursor: pointer;
+  }
+
+  .layer-videos-web {
     width: 127.4rem;
     height: 62.8rem;
+    margin: 3.4rem auto 1.9rem;
+    background: linear-gradient(#160727, #160727) padding-box,
+      linear-gradient(140deg, #03da7d, #8e7de4 85% 100%) border-box;
+    border-radius: 1.5rem;
+    border: 4px solid transparent;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #040840;
+    cursor: pointer;
+    padding-top: 1.5rem;
   }
 
   .planos__titulo {
@@ -812,6 +918,45 @@ ul li {
   }
   .planos__titulo span {
     font-size: 4rem;
+  }
+
+  .planos__cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .plano1,
+  .plano2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .plano1 button {
+    background: linear-gradient(
+      0.25turn,
+      rgba(56, 163, 165, 1) 0.5%,
+      rgba(11, 213, 131, 0.7) 50%
+    );
+    margin-top: 4rem;
+  }
+
+  .plano1 button a {
+    color: #f5f5f5;
+    font-size: 3rem;
+  }
+
+  .plano2 button {
+    margin-top: 4rem;
+    background: linear-gradient(
+      0.25turn,
+      rgba(66, 33, 90, 1) 0.5%,
+      rgba(142, 125, 228, 0.7) 50%
+    );
+  }
+
+  .plano2 button a {
+    color: #f5f5f5;
+    font-size: 3rem;
   }
 
   .planos img {
@@ -870,5 +1015,15 @@ ul li {
   .pg1__info label {
     padding-left: 7rem;
     font-size: 2.5rem;
+  }
+
+  .layer-videos-web,
+  .container__video-web {
+    display: block;
+  }
+
+  .layer-videos-mobile,
+  .container__video-mobile {
+    display: none;
   }
 }

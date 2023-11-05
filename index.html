@@ -23,8 +23,19 @@
       <section class="container">
         <h1 class="container__titulo">Chega de começar o curso de inglês pelo verbo To be!</h1>
         <p class="container__texto">Somente 8% dos alunos matriculados atualmente em escolas tradicionais de inglês alcançam a fluência.</p>
-        <div class="container__video">
-          <span class="container__video-layer"> </span>
+        <div class="container__video-mobile">
+          <span class="container__video-layer">
+            <iframe id="video-principal" style="border-radius: 12px 12px 12px 12px;"
+            width="580"
+            height="200" src="https://www.youtube.com/embed/Z0CoyiveFRU?si=AAulrCSQz7I3w-gV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </span>
+        </div>
+        <div class="container__video-web">
+          <span class="container__video-layer">
+            <iframe id="video-principal" style="border-radius: 12px 12px 12px 12px;"
+            width="1250"
+            height="600" src="https://www.youtube.com/embed/Z0CoyiveFRU?si=AAulrCSQz7I3w-gV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </span>
         </div>
         <button class="container__buy-btn">
           <a href="#">Quero começar AGORA</a>
@@ -32,11 +43,16 @@
         <h2 class="container__texto-buy">Organize sua vida de forma produtiva, entenda como seu cérebro sintetiza o aprendizado, saiba se manter motivado e aprenda não só a "entender", mas de uma vez por todas, entenda como FALAR inglês de forma eficaz. Tudo em um só lugar!</h2>
       </section>
 
+      
+
       <section class="alunos">
-        <span class="alunos__number" data-val="3000">000</span>
-        <h2 class="alunos__texto">
-          ALUNOS FLUENTES & <span>TRANSFORMADOS</span>
-        </h2>
+        <p>Mais de</p>
+        <div class="alunos__letra-titulo">
+          <span class="alunos__number" data-val="3000">000</span>
+          <h2 class="alunos__texto">
+            ALUNOS FLUENTES & <span>TRANSFORMADOS</span>
+          </h2>
+        </div>
       </section>
 
       <section class="feedback">
@@ -345,26 +361,37 @@
           Selecione um dos temas abaixo e conheça algumas de nossas aulas:
         </h2>
         <div class="videos__botoes">
-          <button onclick="changeVideo('https://www.youtube.com/embed/_NjbWF7VYQ8')">Video 1</button>
-          <button onclick="changeVideo('https://www.youtube.com/embed/IMABFAYaJ6o')">Video 2</button>
-      
-          </button>
-          <button onclick="trocar()">
-            <a href="https://www.youtube.com/watch?v=hT_HbysFSEg">PNL</a>
-          </button>
-          <button onclick="trocar()" id="cerebro"><a href=""><a>Seu Cérebro</a></button>
-          <button onclick="trocar()" id="conversation"><a href="">Conversation</a></button>
-          <button onclick="trocar()" id="gramatica"><a href="">Gramática</a></button>
-          <button onclick="trocar()" id="habito"><a href="">Hábitos</a></button>
-          <button onclick="trocar()" id="fluencia"><a href="">Fluência</a></button>
-          <button onclick="trocar()" id="pedagogia"><a href="">Cood Pedagógica</a></button>
-          <button onclick="trocar()" id="neuro"><a href="">Neuroteaching</a></button>
+          <button onclick="changeVideo('https://www.youtube.com/embed/lP3W1Ltg0NE')">Produtividade</button>
+          <button onclick="changeVideo('https://www.youtube.com/embed/kgC6D2k0Lyg')">PNL</button>
+          <button onclick="changeVideo('https://www.youtube.com/embed/IMABFAYaJ6o')">Seu Cérebro</button>
+          <button onclick="changeVideo('https://www.youtube.com/embed/rOM9GORJ00I')">Conversation</button>
+          <button onclick="changeVideo('https://www.youtube.com/embed/0tB73myNQjg')">Gramática</button>
+          <button onclick="changeVideo('https://www.youtube.com/embed/IMABFAYaJ6o')">Hábitos</button>
+          <button onclick="changeVideo('https://www.youtube.com/embed/fu7xJ2jZpQA')">Fluência</button>
+          <button onclick="changeVideo('https://www.youtube.com/embed/Tti6mDK6LXU')">Coord Pedagógica</button>
+          <button onclick="changeVideo('https://www.youtube.com/embed/YImTJzguf3I')">Neuroteaching</button>
         </div>
 
-        <div class="layer-videos" id="videos">
+        <div class="layer-videos-web" >
           <iframe
-            width="650"
-            height="220"
+          id="video"
+          style="border-radius: 15px 15px 15px 15px;"
+            width="1250"
+            height="590"
+            src="https://www.youtube.com/embed/hT_HbysFSEg?si=sL4TQnNESWGhF_DO"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="layer-videos-mobile" >
+          <iframe
+          id="video"
+          style="border-radius: 15px 15px 15px 15px;"
+          width="400"
+          height="200"
             src="https://www.youtube.com/embed/hT_HbysFSEg?si=sL4TQnNESWGhF_DO"
             title="YouTube video player"
             frameborder="0"
@@ -376,16 +403,25 @@
 
       <section class="planos">
         <h2 class="planos__titulo">COMECE SUA MUDANÇA <span>AGORA</span>!</h2>
-        <img
-          src="/Stile/img/Plano 1.svg"
-          alt="Imagem de um card com as informações do plano mensal"
-          class="planos__1"
-        />
-        <img
-          src="/Stile/img/Plano 2.svg"
-          alt="Imagem de um card com as informações do plano anual"
-          class="planos__2"
-        />
+        <div class="planos__cards">
+          <div class="plano1">
+              <img
+                src="/Stile/img/Plano 1.svg"
+                alt="Imagem de um card com as informações do plano mensal"
+                class="planos__1"
+              />
+              <button><a href="#">Escolher Plano</a></button>
+            </div>
+            <div class="plano2">
+              <img
+                src="/Stile/img/Plano 2.svg"
+                alt="Imagem de um card com as informações do plano anual"
+                class="planos__2"
+              />
+              <button><a href="#">Escolher Plano</a></button>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="garantia">
