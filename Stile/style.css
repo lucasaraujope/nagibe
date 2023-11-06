@@ -190,80 +190,7 @@ button {
   display: block;
 }
 
-.lettering {
-  margin-bottom: 3.3rem;
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  display: none;
-}
 
-.lettering__cerebro p {
-  display: inline-block;
-  color: #03da7d;
-}
-
-.lettering__cerebro img {
-  height: 1.5rem;
-}
-
-@keyframes slide {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-.lettering__cerebro {
-  display: inline-block;
-  gap: 0.8rem;
-  align-items: center;
-  animation: 30s slide infinite linear;
-}
-
-.lettering__lampada p {
-  color: #8e7de4;
-  display: inline-block;
-}
-
-.lettering__lampada img {
-  height: 2rem;
-}
-
-@keyframes slidex {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-.lettering__lampada {
-  display: inline-block;
-  align-items: center;
-  gap: 0.5rem;
-  animation: 5s slidex infinite linear;
-}
-
-@keyframes slidey {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-.lettering__balao {
-  display: flex;
-
-  padding: 0 6rem;
-  white-space: nowrap;
-  animation: 3s slidey linear infinite;
-}
 
 .about {
   text-align: center;
@@ -349,12 +276,17 @@ button {
   margin: 0 auto 1.5rem;
 }
 
+.conteudo img{
+  height: 30rem;
+}
+
 .conteudo button {
   padding: 0.3rem 1rem;
 }
 
 .titulo__conteudo {
   display: block;
+  font-size: 2rem;
 }
 
 .titulo__conteudo-2 {
@@ -402,9 +334,13 @@ button {
   padding: 0.4rem;
 }
 
-.layer-videos {
-  width: 33rem;
-  height: 21rem;
+.videos__botoes button a {
+  font-size: 4em;
+}
+
+.layer-videos-mobile {
+  width: 39rem;
+  height: 26rem;
   background: linear-gradient(#160727, #160727) padding-box,
     linear-gradient(140deg, #03da7d, #8e7de4 85% 100%) border-box;
   border-radius: 1.5rem;
@@ -418,11 +354,17 @@ button {
   text-decoration: none;
   color: #040840;
   cursor: pointer;
-  margin: 3.4rem auto 1.9rem;
+  margin: 1rem auto 1.9rem;
+  display: block;
+  padding: 1rem;
 }
 
 .planos {
   text-align: center;
+}
+
+.plano1{
+  margin-bottom: 5rem;
 }
 
 .planos__titulo {
@@ -449,16 +391,20 @@ button {
 }
 
 .planos__1 {
-  margin: 3rem 0;
+  margin: 3rem auto 0;
 }
 
 .plano1 button {
   background: linear-gradient(
     0.25turn,
     rgba(56, 163, 165, 1) 0.5%,
-    rgba(11, 213, 131, 0.7) 50%
+    rgba(11, 213, 131, 0.9) 50%
   );
   padding: 0.5rem 2em;
+}
+
+.plano1 button a{
+  color: #f5f5f5;
 }
 
 .plano2 button {
@@ -494,6 +440,7 @@ button {
   flex-direction: column;
   gap: 2rem;
   margin-bottom: 3rem;
+  justify-content: center;
 }
 
 .faq__titulo {
@@ -508,6 +455,7 @@ button {
 }
 
 .faq__pg1 {
+  position: relative;
   justify-content: center;
 }
 
@@ -524,9 +472,11 @@ button {
   margin: 0 auto;
 }
 
-.pg1__info #input {
-  position: absolute;
-  opacity: 0;
+#marcar {
+  position: relative;
+  opacity: 100;
+  top: 2rem;
+  left: 3rem;
 }
 
 .pg1__info label {
@@ -542,25 +492,14 @@ button {
 
 .seta {
   position: absolute;
-  top: 1.3rem;
+  top: 1.8rem;
   left: 2%;
   color: #fff;
   padding: 0.3rem 0.3rem 0 0.3rem;
   background: #8e7de4;
   border-radius: 12rem;
 }
-.faq__resposta {
-  max-height: 0;
-  overflow: hidden;
-}
 
-.faq__resposta > p:checked {
-  max-height: 100%;
-}
-
-.pg1__info:nth-child(4):checked {
-  max-height: 100%;
-}
 
 .pg1__info div p {
   color: #000;
@@ -603,6 +542,43 @@ ul li {
   display: none;
 }
 
+.faq {
+  display: flex;
+  justify-content: center;
+}
+
+.faq-products {
+  position: relative;
+  width: 90%;
+}
+
+.faq-products #input {
+  position: absolute;
+}
+
+.faq-products label {
+  font-weight: bold;
+  margin-left: 7rem;
+  display: flex;
+  align-items: center;
+}
+
+.faq-texto {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.New-faq > div > p:checked {
+  max-height: 100%;
+}
+
+.ocultar {
+  display: none;
+}
+.mostrar {
+  display: block;
+}
+
 @media screen and (min-width: 1400px) {
   header {
     display: flex;
@@ -624,7 +600,7 @@ ul li {
     padding: 0.5rem 2rem;
   }
 
-  header button a{
+  header button a {
     font-size: 2.3rem;
   }
 
@@ -935,7 +911,7 @@ ul li {
     background: linear-gradient(
       0.25turn,
       rgba(56, 163, 165, 1) 0.5%,
-      rgba(11, 213, 131, 0.7) 50%
+      rgba(11, 213, 131, 0.9) 50%
     );
     margin-top: 4rem;
   }
@@ -989,22 +965,21 @@ ul li {
     margin: 0 auto;
   }
 
-  .pg1__info {
+  .faq{
     position: relative;
     width: 90%;
-    background: #f5f5f5;
     border-radius: 1.5rem;
-    background: linear-gradient(transparent, transparent) padding-box,
+    background: linear-gradient(#f5f5f5, #f5f5f5) padding-box,
       linear-gradient(165deg, #21df8d, #fff 95% 100%) border-box;
-    border-radius: 1.5rem;
     border: 5px solid transparent;
     position: relative;
     margin: 0 auto;
+    height: 7rem;
   }
 
   .seta {
     position: absolute;
-    top: 1.3rem;
+    top: 3rem;
     left: 2%;
     color: #fff;
     padding: 0.5rem 0.5rem 0 0.5rem;
