@@ -70,8 +70,8 @@ header img {
 }
 
 .container__video-layer {
-  width: 33rem;
-  height: 21rem;
+  width: 39rem;
+  height: 25rem;
   background: linear-gradient(#160727, #160727) padding-box,
     linear-gradient(140deg, #03da7d, #8e7de4 85% 100%) border-box;
   border-radius: 1.5rem;
@@ -86,6 +86,7 @@ header img {
   color: #040840;
   cursor: pointer;
   margin: 3.4rem auto 1.9rem;
+  padding-left: 1rem;
 }
 
 #video__um {
@@ -95,6 +96,7 @@ header img {
 .container button {
   padding: 0.5rem 2rem;
 }
+
 button a {
   text-decoration: none;
   color: #160727;
@@ -127,6 +129,7 @@ button {
   text-align: center;
   margin: 6rem auto 3.7rem;
 }
+
 .alunos p {
   font-size: 2rem;
   margin-bottom: -1.2rem;
@@ -189,8 +192,6 @@ button {
 .swiper {
   display: block;
 }
-
-
 
 .about {
   text-align: center;
@@ -268,7 +269,7 @@ button {
 }
 
 .metodo img {
-  width: 100;
+  width: 40rem;
 }
 
 .conteudo {
@@ -276,12 +277,14 @@ button {
   margin: 0 auto 1.5rem;
 }
 
-.conteudo img{
+.conteudo img {
   height: 30rem;
 }
 
 .conteudo button {
-  padding: 0.3rem 1rem;
+  padding: 0.4rem 2rem;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .titulo__conteudo {
@@ -318,7 +321,7 @@ button {
 .videos__botoes button {
   border-radius: 1.5rem;
   background: #545454;
-  width: 10rem;
+  width: 12rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -327,15 +330,11 @@ button {
   text-align: center;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: Fredoka;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   padding: 0.4rem;
-}
-
-.videos__botoes button a {
-  font-size: 4em;
 }
 
 .layer-videos-mobile {
@@ -363,7 +362,7 @@ button {
   text-align: center;
 }
 
-.plano1{
+.plano1 {
   margin-bottom: 5rem;
 }
 
@@ -403,7 +402,7 @@ button {
   padding: 0.5rem 2em;
 }
 
-.plano1 button a{
+.plano1 button a {
   color: #f5f5f5;
 }
 
@@ -433,77 +432,6 @@ button {
 
 .garantia p {
   font-size: 1.5rem;
-}
-
-.faq {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  margin-bottom: 3rem;
-  justify-content: center;
-}
-
-.faq__titulo {
-  color: #f5f5f5;
-  text-align: center;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: Fredoka;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-
-.faq__pg1 {
-  position: relative;
-  justify-content: center;
-}
-
-.pg1__info {
-  position: relative;
-  width: 90%;
-  background: #f5f5f5;
-  border-radius: 1.5rem;
-  background: linear-gradient(transparent, transparent) padding-box,
-    linear-gradient(165deg, #21df8d, #fff 95% 100%) border-box;
-  border-radius: 1.5rem;
-  border: 3px solid transparent;
-  position: relative;
-  margin: 0 auto;
-}
-
-#marcar {
-  position: relative;
-  opacity: 100;
-  top: 2rem;
-  left: 3rem;
-}
-
-.pg1__info label {
-  display: flex;
-  align-items: center;
-  color: #000;
-  height: 23rem;
-  border-radius: 1.5rem;
-  background: #f5f5f5;
-  padding: 0 4rem;
-  height: 5rem;
-}
-
-.seta {
-  position: absolute;
-  top: 1.8rem;
-  left: 2%;
-  color: #fff;
-  padding: 0.3rem 0.3rem 0 0.3rem;
-  background: #8e7de4;
-  border-radius: 12rem;
-}
-
-
-.pg1__info div p {
-  color: #000;
-  background: #f5f5f5;
 }
 
 .texto-e-imagem {
@@ -542,34 +470,96 @@ ul li {
   display: none;
 }
 
+.QA {
+  width: 92%;
+  margin: 1rem auto 3rem;
+  height: auto;
+}
+
 .faq {
-  display: flex;
+  background: #f5f5f5;
+  border-radius: 2.5rem;
+  background: linear-gradient(#f5f5f5, #f5f5f5) padding-box,
+    linear-gradient(140deg, #03da7d, #8e7de4 85% 100%) border-box;
+  border: 6px solid transparent;
+  position: relative;
+  display: inline-flex;
   justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #040840;
+  cursor: pointer;
+  margin: 1rem auto 1.9rem;
+  display: block;
+}
+
+#marcar,
+#marcar2,
+#marcar3,
+#marcar4,
+#marcar5 {
+  position: absolute;
+  top: 2.2rem;
+  left: 1.6rem;
+  width: 2rem;
+  height: 2rem;
+  opacity: 0;
+  cursor: pointer;
 }
 
 .faq-products {
+  color: #160727;
+  padding: 2rem 0.7rem;
+  font-weight: bold;
+  align-items: center;
+  font-size: 2rem;
   position: relative;
-  width: 90%;
+  width: 100%;
+}
+
+.faq-products label {
+  margin-left: 4rem;
+}
+
+.seta {
+  position: absolute;
+  top: 2rem;
+  left: 3%;
+  color: #fff;
+  padding: 0.4rem 0.46rem 0 0.46rem;
+  background: #8e7de4;
+  border-radius: 12rem;
 }
 
 .faq-products #input {
   position: absolute;
 }
 
-.faq-products label {
+#sessao,
+#sessao2,
+#sessao3,
+#sessao4,
+#sessao5 {
+  height: 3rem auto 3rem;
+  padding-top: 2rem;
+  
+}
+
+#sessao p,
+#sessao2 p,
+#sessao3 p,
+#sessao4 p,
+#sessao5 p {
+  color: #160727;
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 2rem;
   font-weight: bold;
-  margin-left: 7rem;
-  display: flex;
-  align-items: center;
-}
-
-.faq-texto {
-  max-height: 0;
-  overflow: hidden;
-}
-
-.New-faq > div > p:checked {
-  max-height: 100%;
 }
 
 .ocultar {
@@ -577,6 +567,10 @@ ul li {
 }
 .mostrar {
   display: block;
+}
+
+.videos__botoes2{
+  display: none;
 }
 
 @media screen and (min-width: 1400px) {
@@ -620,6 +614,7 @@ ul li {
   .container__video-layer {
     width: 127.4rem;
     height: 62.8rem;
+    padding: 0;
   }
 
   .container button {
@@ -811,23 +806,25 @@ ul li {
   }
 
   .conteudo {
-    display: flex;
+    
     justify-content: space-between;
     align-items: center;
-    margin: -8rem 12rem;
+    margin: 10rem auto;
   }
 
   .conteudo img {
-    width: 65rem;
+    width: 70rem;
+    height: 65rem;
+    margin:  -10rem 0;
   }
 
-  .titulo__conteudo-2 {
+  .titulo__conteudo {
     font-size: 3rem;
     margin-bottom: 2rem;
     display: block;
   }
 
-  .conteudo button {
+  .conteudo button a {
     font-size: 3rem;
     padding: 1rem 4rem;
     cursor: pointer;
@@ -843,7 +840,34 @@ ul li {
     transition: 0.5s;
   }
 
-  .videos__botoes {
+  .videos__botoes2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 2rem;
+  justify-items: center;
+  display: block;
+  }
+
+.videos__botoes2 button {
+  border-radius: 1.5rem;
+  background: #545454;
+  width: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 1rem 0;
+  color: #03da7d;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Fredoka;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0.4rem;
+}
+
+  .videos__botoes2 {
     margin: 0 14rem;
     row-gap: 1rem;
   }
@@ -854,14 +878,14 @@ ul li {
     width: 50rem;
   }
 
-  .videos__botoes button {
+  .videos__botoes button, .videos__botoes2 button {
     width: 30rem;
     height: 6.5rem;
     border-radius: 3rem;
     font-size: 2.5rem;
   }
 
-  .videos__botoes button:hover {
+  .videos__botoes button:hover,  .videos__botoes2 button:hover {
     background: #03da7d;
     color: #545454;
     cursor: pointer;
@@ -902,6 +926,10 @@ ul li {
     justify-content: center;
   }
 
+  .plano1{
+    margin: 0;
+  }
+  
   .plano1,
   .plano2 {
     display: flex;
@@ -960,12 +988,12 @@ ul li {
     margin-bottom: 4rem;
   }
 
-  .faq__pg1 {
-    width: 80%;
+  .faq-products {
+    width: 100%;
     margin: 0 auto;
   }
 
-  .faq{
+  .faq {
     position: relative;
     width: 90%;
     border-radius: 1.5rem;
@@ -975,11 +1003,12 @@ ul li {
     position: relative;
     margin: 0 auto;
     height: 7rem;
+    margin-bottom: 2rem;
   }
 
   .seta {
     position: absolute;
-    top: 3rem;
+    top: 2rem;
     left: 2%;
     color: #fff;
     padding: 0.5rem 0.5rem 0 0.5rem;
@@ -987,8 +1016,8 @@ ul li {
     border-radius: 12rem;
   }
 
-  .pg1__info label {
-    padding-left: 7rem;
+  .faq-products label {
+    padding-left: 3rem;
     font-size: 2.5rem;
   }
 
@@ -1001,4 +1030,15 @@ ul li {
   .container__video-mobile {
     display: none;
   }
+
+  .videos__botoes2{
+    display: block;
+    display: grid;
+  }
+
+  .videos__botoes{
+    display: none; 
+  }
+ 
+  
 }

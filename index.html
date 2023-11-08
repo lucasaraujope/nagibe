@@ -26,29 +26,85 @@
         <div class="container__video-mobile">
           <span class="container__video-layer">
             <iframe id="video-principal" style="border-radius: 12px 12px 12px 12px;"
-            width="580"
-            height="200" src="https://www.youtube.com/embed/lP3W1Ltg0NE?si=TaEv0JxO8egO1TO5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>></iframe>
+            width="340"
+            height="200" src="https://www.youtube.com/embed/9sMbtmVcU5k?si=ldfIdQ1d_ju_5q6M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </span>
         </div>
         <div class="container__video-web">
           <span class="container__video-layer">
             <iframe id="video-principal" style="border-radius: 12px 12px 12px 12px;"
             width="1250"
-            height="600" src="https://www.youtube.com/embed/lP3W1Ltg0NE?si=TaEv0JxO8egO1TO5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            height="600" src="https://www.youtube.com/embed/9sMbtmVcU5k?si=ldfIdQ1d_ju_5q6M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </span>
         </div>
         <button class="container__buy-btn">
-          <a href="#">Quero começar AGORA</a>
+          <a href="#planos" style="transition: 2s;">Quero começar AGORA</a>
         </button>
         <h2 class="container__texto-buy">Organize sua vida de forma produtiva, entenda como seu cérebro sintetiza o aprendizado, saiba se manter motivado e aprenda não só a "entender", mas de uma vez por todas, entenda como FALAR inglês de forma eficaz. Tudo em um só lugar!</h2>
       </section>
-
       
+      <section class="conteudo">
+        <h2 class="titulo__conteudo">O que você terá acesso com a LC?</h2>
+        <img src="/Stile/img/conteudo.svg" alt="imagem mostrando os conteúdos que o curso terá">
+        <div class="conteudo__infos">
+          <button><a href="#planos">Mude o Jogo!</a></button>
+        </div>
+      </section>
+
+      <section class="videos">
+        <h2 class="videos__titulos">
+          Selecione um dos temas abaixo e conheça algumas de nossas aulas:
+        </h2>
+        <div class="videos__botoes">
+          <button onclick="changeVideo('https://www.youtube.com/embed/lP3W1Ltg0NE')">Produtividade</button>
+          <button onclick="changeVideo('https://www.youtube.com/embed/kgC6D2k0Lyg')">PNL</button>
+          <button onclick="changeVideo('https://www.youtube.com/embed/kArxoV3Nr8Y')">Seu Cérebro</button>
+          <button onclick="changeVideo('https://www.youtube.com/embed/rOM9GORJ00I')">Conversation</button>
+          <button onclick="changeVideo('https://www.youtube.com/embed/0tB73myNQjg')">Gramática</button>
+          <button onclick="changeVideo('https://www.youtube.com/embed/tvDMkvzJADc')">Hábitos</button>
+          <button onclick="changeVideo('https://www.youtube.com/embed/fu7xJ2jZpQA')">Fluência</button>
+          <button onclick="changeVideo('https://www.youtube.com/embed/Tti6mDK6LXU')">Coord Pedagógica</button>
+          <button onclick="changeVideo('https://www.youtube.com/embed/YImTJzguf3I')">Neuroteaching</button>
+        </div>
+
+        <div class="videos__botoes2">
+          <button onclick="changeVideo2('https://www.youtube.com/embed/lP3W1Ltg0NE')">Produtividade</button>
+          <button onclick="changeVideo2('https://www.youtube.com/embed/kgC6D2k0Lyg')">PNL</button>
+          <button onclick="changeVideo2('https://www.youtube.com/embed/kArxoV3Nr8Y')">Seu Cérebro</button>
+          <button onclick="changeVideo2('https://www.youtube.com/embed/rOM9GORJ00I')">Conversation</button>
+          <button onclick="changeVideo2('https://www.youtube.com/embed/0tB73myNQjg')">Gramática</button>
+          <button onclick="changeVideo2('https://www.youtube.com/embed/tvDMkvzJADc')">Hábitos</button>
+          <button onclick="changeVideo2('https://www.youtube.com/embed/fu7xJ2jZpQA')">Fluência</button>
+          <button onclick="changeVideo2('https://www.youtube.com/embed/Tti6mDK6LXU')">Coord Pedagógica</button>
+          <button onclick="changeVideo2('https://www.youtube.com/embed/YImTJzguf3I')">Neuroteaching</button>
+        </div>
+        <div class="layer-videos-web" >
+          <iframe
+          id="video2"
+          style="border-radius: 15px 15px 15px 15px;"
+            width="1250"
+            height="590"
+            src="https://www.youtube.com/embed/lP3W1Ltg0NE?si=TaEv0JxO8egO1TO5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
+          ></iframe>
+        </div>
+
+        
+
+        <div class="layer-videos-mobile" >
+          <iframe
+          id="video"
+          style="border-radius: 15px 15px 15px 15px;"
+          width="360"
+          height="230"
+          src="https://www.youtube.com/embed/lP3W1Ltg0NE?si=TaEv0JxO8egO1TO5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
+          ></iframe>
+        </div>
+      </section>
 
       <section class="alunos">
         <p>Mais de</p>
         <div class="alunos__letra-titulo">
-          <span class="alunos__number" data-val="3000">000</span>
+          <span class="alunos__number" data-val="3476">000</span>
           <h2 class="alunos__texto">
             ALUNOS FLUENTES & <span>TRANSFORMADOS</span>
           </h2>
@@ -135,7 +191,7 @@
         </div>
       </div>
 
-        <button><a href="#">Seja Transformado!</a></button>
+        <button><a href="#planos">Seja Transformado!</a></button>
       </section>
 
       <div class="depoimentos-web">
@@ -157,7 +213,7 @@
             <img src="/Stile/img/feedback 8.svg" alt="">
           </div>
         </div>
-        <button><a href="#">Seja Transformado!</a></button>
+        <button><a href="#planos">Seja Transformado!</a></button>
       </div>
 
         
@@ -190,7 +246,7 @@
       <section class="metodo">
         <div class="botao__modulos">
           <button class="modulos__botao">
-            <a href="#">Quero começar AGORA!</a>
+            <a href="#planos">Quero começar AGORA!</a>
           </button>
         </div>
         <img
@@ -200,53 +256,9 @@
         />
       </section>
 
-      <section class="conteudo">
-        <h2 class="titulo__conteudo">O que você terá acesso com a LC?</h2>
-        <img src="/Stile/img/conteudo.svg" alt="imagem mostrando os conteúdos que o curso terá">
-        <div class="conteudo__infos">
-          <h2 class="titulo__conteudo-2">O que você terá acesso com a LC?</h2>
-          <button><a href=""></a>Mude o Jogo!</button>
-        </div>
-      </section>
+  
 
-      <section class="videos">
-        <h2 class="videos__titulos">
-          Selecione um dos temas abaixo e conheça algumas de nossas aulas:
-        </h2>
-        <div class="videos__botoes">
-          <button onclick="changeVideo('https://www.youtube.com/embed/lP3W1Ltg0NE')">Produtividade</button>
-          <button onclick="changeVideo('https://www.youtube.com/embed/kgC6D2k0Lyg')">PNL</button>
-          <button onclick="changeVideo('https://www.youtube.com/embed/IMABFAYaJ6o')">Seu Cérebro</button>
-          <button onclick="changeVideo('https://www.youtube.com/embed/rOM9GORJ00I')">Conversation</button>
-          <button onclick="changeVideo('https://www.youtube.com/embed/0tB73myNQjg')">Gramática</button>
-          <button onclick="changeVideo('https://www.youtube.com/embed/IMABFAYaJ6o')">Hábitos</button>
-          <button onclick="changeVideo('https://www.youtube.com/embed/fu7xJ2jZpQA')">Fluência</button>
-          <button onclick="changeVideo('https://www.youtube.com/embed/Tti6mDK6LXU')">Coord Pedagógica</button>
-          <button onclick="changeVideo('https://www.youtube.com/embed/YImTJzguf3I')">Neuroteaching</button>
-        </div>
-
-        <div class="layer-videos-web" >
-          <iframe
-          id="video"
-          style="border-radius: 15px 15px 15px 15px;"
-            width="1250"
-            height="590"
-            src="https://www.youtube.com/embed/lP3W1Ltg0NE?si=TaEv0JxO8egO1TO5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
-          ></iframe>
-        </div>
-
-        <div class="layer-videos-mobile" >
-          <iframe
-          id="video"
-          style="border-radius: 15px 15px 15px 15px;"
-          width="360"
-          height="230"
-          src="https://www.youtube.com/embed/lP3W1Ltg0NE?si=TaEv0JxO8egO1TO5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
-          ></iframe>
-        </div>
-      </section>
-
-      <section class="planos">
+      <section class="planos" id="planos">
         <h2 class="planos__titulo">COMECE SUA MUDANÇA <span>AGORA</span>!</h2>
         <div class="planos__cards">
           <div class="plano1">
@@ -255,7 +267,7 @@
                 alt="Imagem de um card com as informações do plano mensal"
                 class="planos__1"
               />
-              <button><a href="#">Escolher Plano</a></button>
+              <button><a href="https://pay.herospark.com/plano-anual-219866" target="_blank">Escolher Plano</a></button>
             </div>
             <div class="plano2">
               <img
@@ -263,7 +275,7 @@
                 alt="Imagem de um card com as informações do plano anual"
                 class="planos__2"
               />
-              <button><a href="#">Escolher Plano</a></button>
+              <button><a href="https://pay.herospark.com/plano-mensal-219864 " target="_blank">Escolher Plano</a></button>
             </div>
           </div>
         </div>
@@ -281,7 +293,7 @@
         </p>
       </section>
 
-      <section>
+      <section class="QA">
         <div class="faq">
           <!--Products-->
           <div class="faq-products">
@@ -292,7 +304,7 @@
               <!--Heading-->
               <label for="marcar">Qual o formato do curso?</label>
               <!-- Content-->
-              <div id="sessao">
+              <div id="sessao" class="ocultar">
                 <p>
                   Você terá acesso a diversas vídeo aulas (passo a passo) + Bônus
                   Especiais, 100% online e poderá assistir de onde estiver, seja
@@ -300,11 +312,75 @@
                 </p>
               </div>
           </div>
-          <!--Input Checkbox-->
-          <!--INformations-->
-          <!--Questions-->
-          <!--Guides-->
         </div>
+        <div class="faq">
+          <!--Products-->
+          <div class="faq-products">
+              <div class="seta">
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </div>
+              <input type="checkbox" id="marcar2"/>
+              <!--Heading-->
+              <label for="marcar2">Quais as formas de pagamento?</label>
+              <!-- Content-->
+              <div id="sessao2" class="ocultar">
+                <p>
+                  Você tem as opções de pagamento via cartões de crédito (até dois cartões), PIX ou paypal.
+                </p>
+              </div>
+          </div>
+        </div>
+        <div class="faq">
+          <!--Products-->
+          <div class="faq-products">
+              <div class="seta">
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </div>
+              <input type="checkbox" id="marcar3"/>
+              <!--Heading-->
+              <label for="marcar3">Como vou receber o curso?</label>
+              <!-- Content-->
+              <div id="sessao3" class="ocultar">
+                <p>
+                  Assim que seu pedido for aprovado, o link de acesso ao curso será enviado ao seu e-mail, onde você terá acesso à sua área de membros do curso com login e senha pessoal.
+                </p>
+              </div>
+          </div>
+        </div>
+        <div class="faq">
+          <!--Products-->
+          <div class="faq-products">
+              <div class="seta">
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </div>
+              <input type="checkbox" id="marcar4"/>
+              <!--Heading-->
+              <label for="marcar4">Tenho que pagar alguma mensalidade?</label>
+              <!-- Content-->
+              <div id="sessao4" class="ocultar">
+                <p>
+                  Sim, esse é um plano de assinatura mensal de R$39,90 (mensal) ou, contratando o plano anual, a mensalidade será de R$29,90.
+                </p>
+              </div>
+          </div>
+        </div>
+        <div class="faq">
+          <!--Products-->
+          <div class="faq-products">
+              <div class="seta">
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </div>
+              <input type="checkbox" id="marcar5"/>
+              <!--Heading-->
+              <label for="marcar5">Por quanto tempo terei acesso ao curso?</label>
+              <!-- Content-->
+              <div id="sessao5" class="ocultar">
+                <p>
+                  Você terá acesso ao curso por 1 mês ou 1 ano, dependendo do modelo de assinatura que escolher, podendo acessar quantas vezes quiser nesse período, e caso não se sinta satisfeito com sua compra, você pode fazer o cancelamento em até 7 dias.
+                </p>
+              </div>
+          </div>
+        </div>             
       </section>
 
            
@@ -332,6 +408,11 @@
   <script>
     function changeVideo(embedUrl) {
         document.getElementById("video").src = embedUrl;
+    }
+  </script>
+  <script>
+    function changeVideo2(embedUrl) {
+        document.getElementById("video2").src = embedUrl;
     }
   </script>
   <script src="/JS/main.js"></script>
@@ -366,7 +447,51 @@
                 sessao.className = "mostrar"
             }
         })
-    </script>
+      </script>
+      <script>
+        const checkbox2 = document.getElementById('marcar2');
+        checkbox2.addEventListener('change', (event) => {
+            const sessao = document.getElementById('sessao2')
+            if(event.target.checked) {
+                sessao2.className = "ocultar"
+            } else {
+                sessao2.className = "mostrar"
+            }
+        })
+      </script>
+      <script>
+        const checkbox3 = document.getElementById('marcar3');
+        checkbox3.addEventListener('change', (event) => {
+            const sessao = document.getElementById('sessao3')
+            if(event.target.checked) {
+                sessao3.className = "ocultar"
+            } else {
+                sessao3.className = "mostrar"
+            }
+        })
+      </script>
+      <script>
+        const checkbox4 = document.getElementById('marcar4');
+        checkbox4.addEventListener('change', (event) => {
+            const sessao = document.getElementById('sessao4')
+            if(event.target.checked) {
+                sessao4.className = "ocultar"
+            } else {
+                sessao4.className = "mostrar"
+            }
+        })
+      </script>
+      <script>
+        const checkbox5 = document.getElementById('marcar5');
+        checkbox5.addEventListener('change', (event) => {
+            const sessao = document.getElementById('sessao5')
+            if(event.target.checked) {
+                sessao5.className = "ocultar"
+            } else {
+                sessao5.className = "mostrar"
+            }
+        })
+      </script>
     
     </main>
 </html>
